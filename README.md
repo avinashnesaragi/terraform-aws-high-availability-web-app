@@ -11,6 +11,9 @@ The infrastructure deploys two Apache web servers across two Availability Zones 
 <img width="2486" height="696" alt="Architecture" src="https://github.com/user-attachments/assets/4380b264-4b61-4c58-aa3d-3d45afaf2be4" />
 
 
+## Architecture
+
+
 Internet
    │
    ▼
@@ -19,9 +22,12 @@ Internet Gateway
    ▼
 Application Load Balancer
    │
-   ├── EC2 Web Server 1 ── Public Subnet 1 ── Availability Zone 1
+   ├── EC2 Web Server 1
+   │   └── Public Subnet 1 ── Availability Zone 1
    │
-   └── EC2 Web Server 2 ── Public Subnet 2 ── Availability Zone 2
+   └── EC2 Web Server 2
+       └── Public Subnet 2 ── Availability Zone 2
+
 
 ## AWS Resources Created
 
